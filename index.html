@@ -17,33 +17,56 @@
                 <table class="table table-borderless">
                     <tr>
                         <td>Patient Name</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="pname" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Address</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="add" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Phone No:</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="phone" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Email Id</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="email" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>Symptoms</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input id="sympt" type="text" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-success">SUBMIT</button></td>
+                        <td><button onclick="buttonclick()" class="btn btn-success">SUBMIT</button></td>
                     </tr>
                 </table>
             </div>
             <div class="col col-12 col-sm-6 col-md-12 col-lg-6 col-xl-3 col-xxl-3"></div>
         </div>
     </div>
+
+    <script>
+
+        function buttonclick(){
+            var getpname=document.getElementById("pname").value
+            var getadd=document.getElementById("add").value
+
+            var getphone=document.getElementById("phone").value
+
+            var getemail=document.getElementById("email").value
+            var getsympt=document.getElementById("sympt").value
+
+
+            console.log(getpname)
+            console.log(getadd)
+            console.log(getphone)
+            console.log(getemail)
+            console.log(getsympt)
+
+
+
+        }
+    </script>
     
 </body>
 </html>
